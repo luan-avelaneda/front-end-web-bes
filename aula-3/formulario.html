@@ -101,20 +101,34 @@
 <fieldset>
     <legend>Tecnologias que domina:</legend>
     <div>
-        <input id="tecnologia_html_id" name="tecnologia[]" type="checkbox" value="html">
+        <input id="tecnologia_html_id" name="tecnologia" type="checkbox" value="html">
         <label for="tecnologia_html_id">HTML</label>
     </div>
     <div>
-        <input id="tecnologia_css_id" name="tecnologia[]" type="checkbox" value="css">
+        <input id="tecnologia_css_id" name="tecnologia" type="checkbox" value="css">
         <label for="tecnologia_css_id">CSS</label>
     </div>
     <div>
-        <input id="tecnologia_javascript_id" name="tecnologia[]" type="checkbox" value="javascript">
+        <input id="tecnologia_javascript_id" name="tecnologia" type="checkbox" value="javascript">
         <label for="tecnologia_javascript_id">JavaScript</label>
     </div>
 
 </fieldset>
 
+<fieldset>
+    <legend>Grau de instrução</legend>
+
+    <div>
+        <label for="escolaridade_id">Escolaridade:</label>
+        <select id="escolaridade_id" name="escolaridade" required>
+            <option value="">Selecione</option>
+            <option value="fundamental">Ensino Fundamental</option>
+            <option value="medio">Ensino Médio</option>
+            <option value="superior">Ensino Superior</option>
+            <option value="pos_graduacao">Pós-Graduado(a)</option>
+        </select>
+
+</fieldset>
 </form>
 
   </section>
