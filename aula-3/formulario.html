@@ -62,21 +62,58 @@
     </div>
 
 </fieldset>
+</fieldset>
+
+<fieldset>
+    <legend>Resumo</legend>
+
+    <div>
+<label>Fale sobre você:</label>
+        <textarea id="resumo_id" name="resumo" required></textarea>
+    </div>
+</fieldset>
+
+<fieldset>
+    <legend>Nivel desejado</legend>
+
+    <div>
+        <input id="nivel_estagio_id" name="nivel" type="radio" value="estagio">
+        <label for="nivel_estagio_id">Estágio</label>
+    </div>
+    <div>
+        
+        <input id="nivel_junior_id" name="nivel" type="radio" value="junior">
+        <label for="nivel_junior_id">Junior</label>
+    </div>
+    <div>
+        
+        <input id="nivel_pleno_id" name="nivel" type="radio" value="pleno">
+        <label for="nivel_pleno_id">Pleno</label>
+    </div>
+    <div>
+        
+        <input id="nivel_senior_id" name="nivel" type="radio" value="senior">
+        <label for="nivel_senior_id">Senior</label>
+    </div>
 
 </fieldset>
 
 <fieldset>
-    <legend>Formação Acadêmica</legend>
-
+    <legend>Tecnologias que domina:</legend>
     <div>
-        <label for="formacao_id">Formação:</label>
-        <input type="text" id="formacao_id" name="formacao" required>
+        <input id="tecnologia_html_id" name="tecnologia[]" type="checkbox" value="html">
+        <label for="tecnologia_html_id">HTML</label>
+    </div>
+    <div>
+        <input id="tecnologia_css_id" name="tecnologia[]" type="checkbox" value="css">
+        <label for="tecnologia_css_id">CSS</label>
+    </div>
+    <div>
+        <input id="tecnologia_javascript_id" name="tecnologia[]" type="checkbox" value="javascript">
+        <label for="tecnologia_javascript_id">JavaScript</label>
     </div>
 
-    <div>
-        <label for="instituicao_id">Instituição:</label>
-        <input type="text" id="instituicao_id" name="instituicao" required>
-    </div>
+</fieldset>
 
 </form>
 
