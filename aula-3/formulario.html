@@ -15,15 +15,19 @@
     <section>
 <h2>Cadastre o seu curriculo</h2>
 
-<form action="https://postman-echo.com/get" method="get">
+<form action="https://postman-echo.com/post" method="post">
     <p>Preencha o formulario abaixo para se candidatar a vaga: </p>
 
 <fieldset> 
     <legend>Dados Pessoais</legend>
     
     <div>
+        <label for="foto_id">Foto:</label>
+        <input type="file" id="foto_id" name="foto" accept="image/*">
+    </div>
+    <div>
     <label for="nome_id">Nome Completo:</label>
-    <input type="text" id="nome_id" name="nome" >
+    <input type="text" id="nome_id" name="nome" placeholder="Digite seu nome completo">
 </div>
 
 <div>
