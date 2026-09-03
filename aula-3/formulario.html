@@ -7,27 +7,28 @@
 <body>
     
 <header>
-<h1>Recrutamento Online</h1>
+<h1>Cotação Property</h1>
 </header>
 
 <main>
 
     <section>
-<h2>Cadastre o seu curriculo</h2>
+<h2>Questionario de Cotação</h2>
 
 <form action="https://postman-echo.com/post" method="post" enctype="multipart/form-data">
-    <p>Preencha o formulario abaixo para se candidatar a vaga: </p>
+    <p>Preencha os dados abaixo para analise da cotação: </p>
 
 <fieldset> 
-    <legend>Dados Pessoais</legend>
+    <legend>Dados pessoais</legend>
     
-    <div>
-        <label for="foto_id">Foto:</label>
-        <input type="file" id="foto_id" name="foto" accept="image/*">
-    </div>
     <div>
     <label for="nome_id">Nome Completo:</label>
     <input type="text" id="nome_id" name="nome" placeholder="Digite seu nome completo">
+</div>
+
+  <div>
+    <label for="cpf_cnpj_id">CPF/CNPJ:</label>
+    <input type="text" id="cpf_cnpj_id" name="cpf_cnpj" placeholder="Digite seu CPF ou CNPJ">
 </div>
 
 <div>
@@ -72,9 +73,10 @@
     <legend>Resumo</legend>
 
     <div>
-<label>Fale sobre você:</label>
-        <textarea id="resumo_id" name="resumo" ></textarea>
-    </div>
+    <label for="nome_id">Fale sobre você:</label>
+    <textarea id="nome_id" name="nome" placeholder="Digite uma breve descrição sobre você"></textarea>
+</div>
+
 </fieldset>
 
 <fieldset>
