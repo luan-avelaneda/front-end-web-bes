@@ -128,3 +128,13 @@ table td:last-child, table th:last-child {
 table tr:last-child td {
   border-bottom: none;
 }
+
+footer {
+  margin-top: 1rem;
+  font-size: 0.875rem;
+  padding: 1rem;
+  text-align: center;
+  color: #ffffff;
+  background-color: rgb(160, 27, 27);
+  border-radius: 0.5rem;
+}
