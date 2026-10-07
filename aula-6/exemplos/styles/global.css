@@ -100,5 +100,45 @@ footer {
   gap: 0.5rem;
 }
 
+.container-grid .item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
+.container-grid-area {
+ display: grid;
+ grid-template-areas:
+  "cabecalho   cabecalho"
+  "principal   artigo"
+  "rodape      rodape";  
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: 1fr 4fr 0.5fr;
+  height: 300px;
+}
 
+.container-grid-area div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-grid-area .item-cabecalho {
+  grid-area: cabecalho;
+  background-color: lightcoral;
+}
+
+.container-grid-area .item-principal {
+  grid-area: principal;
+  background-color: lightblue ;
+}
+
+.container-grid-area .item-artigo {
+  grid-area: artigo;
+  background-color: lightgreen ;
+}
+
+.container-grid-area .item-rodape {
+  grid-area: rodape;
+  background-color: lightgray ;
+}
