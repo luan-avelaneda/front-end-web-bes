@@ -23,6 +23,29 @@ if (idade.value === "") {
 }
 
  //TODO: COMO VALIDAR UM E-MAIL UTILIZANDO UM REGEX
+ const email = document.querySelector("#email");
+const erroEmail = document.querySelector("#erro-email");
+
+if (email.value === "") {
+  erroEmail.textContent = "E-mail não pode estar vazio!";
+  erroEmail.classList.add("erro");
+  erroEmail.classList.remove("oculto");
+} else {
+  const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if (!regex.test(email.value)) {
+    erroEmail.textContent = "E-mail inválido!";
+    erroEmail.classList.add("erro");
+    erroEmail.classList.remove("oculto");
+  }
+}
+
+const termos = document.querySelector("#termos");
+const erroTermos = document.querySelector("#erro-termos");
+if (!termos.checked) {
+  erroTermos.textContent = "Você deve aceitar os termos!";
+  erroTermos.classList.add("erro");
+  erroTermos.classList.remove("oculto");
+}
 
 function limparErros() {
  document.querySelectorAll(".erro").forEach((elemento) => {
