@@ -49,6 +49,7 @@ if (!termos.checked) {
 
 const valido = document.querySelectorAll(".erro").length === 0;
 const concluido = document.querySelector("#concluido");
+
 if (!valido) {
   concluido.textContent = "Corrija os erros para prosseguir!";
   concluido.classList.add("erro");
