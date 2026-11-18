@@ -11,38 +11,98 @@ html {
 body {
   font-family: Arial, sans-serif;
   font-size: 1.6rem;
-  max-width: 50rem;
-  margin: 4rem auto;
+  line-height: 1.5;
+  color: #23332f;
+  background-color: #f2f6f3;
+  max-width: 56rem;
+  margin: 5rem auto;
+  padding: 0 2rem;
+}
+
+header,
+main {
+  background-color: #fff;
+  padding: 2.8rem;
+  border-radius: 1.2rem;
+  box-shadow: 0 0.6rem 2rem rgba(35, 51, 47, 0.08);
+}
+
+header {
+  border-top: 0.5rem solid #3d806c;
+}
+
+.identificacao {
+  color: #3d806c;
+  font-size: 1.2rem;
+  font-weight: bold;
+  letter-spacing: 0.12em;
+  margin-bottom: 0.8rem;
+}
+
+header p:last-child {
+  margin-top: 0.8rem;
 }
 
 main {
-  margin-top: 3rem;
+  margin-top: 1.8rem;
+}
+
+h2 {
+  margin-bottom: 1.4rem;
 }
 
 footer {
-  margin-top: 3rem;
+  margin-top: 1.8rem;
+  color: #53645e;
+  text-align: center;
 }
 
 footer p {
-  margin-top: 1rem;
-  padding: 1.5rem;
+  padding: 1rem;
 }
 
 label {
   display: block;
-  margin-top: 1.2rem;
+  margin-top: 1.6rem;
+  font-weight: bold;
 }
 
 input[type="text"],
 input[type="number"],
 input[type="email"] {
-  padding: 0.8rem;
+  display: block;
+  margin-top: 0.5rem;
+  padding: 1rem;
   width: 100%;
+  border: 0.1rem solid #bdcbc4;
+  border-radius: 0.6rem;
+  font: inherit;
+}
+
+input:focus {
+  outline: 0.2rem solid #3d806c;
+  outline-offset: 0.2rem;
+}
+
+input[type="checkbox"] {
+  margin-right: 0.6rem;
 }
 
 button {
-  padding: 1rem 2rem;
-  margin-top: 1.6rem;
+  width: 100%;
+  padding: 1.2rem 2rem;
+  margin-top: 2rem;
+  color: #fff;
+  background-color: #3d806c;
+  border: 0;
+  border-radius: 0.6rem;
+  font: inherit;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #2f6655;
 }
 
 .oculto {
@@ -57,4 +117,15 @@ button {
 .erro {
   color: #8a1c1c;
   background-color: #ffe6e6;
+}
+
+@media (max-width: 40rem) {
+  body {
+    margin: 2rem auto;
+  }
+
+  header,
+  main {
+    padding: 2rem;
+  }
 }
